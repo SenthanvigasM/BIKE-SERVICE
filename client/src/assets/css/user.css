@@ -1,0 +1,95 @@
+.fullScreenContainerUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #ffffff, #c8e6c9); /* Soft gradient background */
+  height: 100vh;
+}
+
+.containerUser {
+  width: calc(100% - 40px); /* Adjusted width with margins */
+  margin: 70px; /* Margin on all sides */
+  overflow-x: auto;
+}
+
+.hallUser {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center; /* Center align the text */
+}
+
+.loUser {
+  text-decoration: none;
+  color: #069C54; /* Link color */
+}
+
+.loUser:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.button {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #333;
+}
+
+.neumorphicUser {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent; /* Transparent background for glass effect */
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37); /* Soft shadow */
+  backdrop-filter: blur(7px); /* Blur effect */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden;
+}
+
+.neumorphicUser th,
+.neumorphicUser td {
+  padding: 12px 15px;
+  text-align: left;
+  border: none; /* No borders */
+  background: transparent; /* Transparent background for cells */
+  color: #333; /* Text color */
+}
+
+.neumorphicUser th {
+  background-color: white; /* Solid white header background */
+  color: green; /* Header text color */
+  text-align: center; /* Center align the header text */
+}
+
+.neumorphicUser tr {
+  background-color: rgba(255, 255, 255, 0.5); /* Row background with transparency */
+}
+
+.neumorphicUser tr:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Hover effect with increased transparency */
+}
+
+.cancel-button {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+  padding: 0px; /* Adjusted padding for a smaller button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 14px; /* Adjusted font size */
+  line-height: 1; /* Remove extra line height */
+}
+
+.cancel-button:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #333;
+}

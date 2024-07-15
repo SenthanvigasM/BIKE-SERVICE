@@ -1,0 +1,85 @@
+.fullScreenContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #ffffff, #c8e6c9); /* Soft gradient background */
+  height: 100vh;
+}
+
+.hall {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.lo {
+  text-decoration: none;
+}
+
+.container {
+  width: calc(100% - 40px); /* Adjusted width with margins */
+  margin: 70px; /* Margin on all sides */
+  overflow-x: auto;
+}
+
+.glassmorphism {
+  width: 100%;
+  border-radius: 10px; /* Rounded corners */
+  background: rgba(255, 255, 255, 0.2); /* Frosted glass background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  padding: 10px;
+  overflow: hidden;
+}
+
+.neumorphic {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent; /* Transparent background for glass effect */
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37); /* Soft shadow */
+  backdrop-filter: blur(7px); /* Blur effect */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden;
+}
+
+.neumorphic th,
+.neumorphic td {
+  padding: 12px 15px;
+  text-align: left;
+  border: none; /* No borders */
+  background: transparent; /* Transparent background for cells */
+  color: #333; /* Text color */
+}
+
+.neumorphic th {
+  background-color: white; /* Solid white header background */
+  color: green; /* Header text color */
+}
+
+.neumorphic tr {
+  background-color: rgba(255, 255, 255, 0.5); /* Row background with transparency */
+}
+
+.neumorphic tr:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Hover effect with increased transparency */
+}
+
+.neumorphic td button {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+  padding: 6px 10px; /* Adjusted padding for a more compact button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0; /* Remove unnecessary top margin */
+  font-size: 14px; /* Adjusted font size */
+}
+
+.neumorphic td button:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #333;
+}

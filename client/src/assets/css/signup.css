@@ -1,0 +1,144 @@
+.login-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom,#fcfbfe, #3498db);
+    
+    
+  }
+  
+  .log_img {
+    width: 25%;
+    height: auto;
+    margin-right: 30px; 
+  }
+  
+  .content {
+    width: 20%;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.5), 2px 2px 5px rgba(94, 104, 121, 0.288);
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .content .text {
+    font-size: 33px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    color: #069C54;
+  }
+  
+  .field {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  
+  .field:nth-child(2) {
+    margin-top: 20px;
+  }
+  
+  .field input {
+    height: 100%;
+    width: 100%;
+    padding-left: 45px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background: #dde1e7;
+    color: #595959;
+    border-radius: 25px;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .field input:focus {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px rgba(255, 255, 255, 0.5);
+  }
+  
+  .field span {
+    position: absolute;
+    color: #000000;
+    width: 50px;
+    line-height: 50px;
+  }
+  
+  .field label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 45px;
+    pointer-events: none;
+    color: #000000;
+  }
+  
+  .field input:valid ~ label {
+    opacity: 0;
+  }
+  
+  button {
+    margin: 15px 0;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 600;
+    background: #dde1e7;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #000000;
+    box-shadow: 2px 2px 5px #babecc, -5px -5px 10px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+  }
+  
+  button:focus {
+    color: #3498db;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  .sign-up {
+    margin: 10px 0;
+    color: #000000;
+    font-size: 16px;
+  }
+  
+  .sign-up a {
+    color: #069C54;
+    text-decoration: none;
+  }
+  
+  .sign-up a:hover {
+    text-decoration: underline;
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .login-content {
+      overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .log_img {
+      overflow: hidden;
+        width: 80%;
+    }
+  
+    .content {
+      overflow: hidden;
+        width: 60%;
+    }
+  }
